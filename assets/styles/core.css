@@ -1,0 +1,179 @@
+#main-section{
+    background: #fafafa;
+}
+
+#morpheus-space{
+   background: url("../images/morpheus.png");
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    height: 50vw;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#red_pill{
+    top: 59%;
+    left:19%;
+    background: url("../images/red_pill.png");
+    height: 8%;
+    width: 8%;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#blue_pill{
+    top: 57%;
+    right:21%;
+    bottom: 0px;
+background: url("../images/blue_pill.png");
+    height: 8%;
+    width: 8%;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.pill{
+    -webkit-animation-name: floating;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out; 
+    -moz-animation-name: floating_moz;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes floating{
+    from {transform:translate(0, 0px);}
+    65% {transform:translate(0, 10%);}
+    to {transform: translate(0, 0px);} 
+}
+
+@-webkit-keyframes floating{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 10%);}
+    to {-webkit-transform: translate(0, 0px);} 
+}
+
+@-moz-keyframes floating_moz{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 10%);}
+    to {-moz-transform: translate(0, 0px);}    
+}
+
+#resume-container{
+    background: #F1F1F1;
+    margin-left: auto;
+    margin-right:auto;
+    width: 21cm;
+    height: 29.7cm;
+    box-shadow: 0 0 10px #888888;
+}
+
+#resume-title-block{
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    background: #d0d0d0;
+    height: 18%;
+}
+
+#resume-education-block{
+   height: 18%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#resume-profession-block{
+    height: 40%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#resume-coursework-block{
+    height: 14%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#resume-technical-block{
+    height: 14%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#resume-achievements-block{
+    height: 14%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#resume-interests-block{
+    height: 14%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.resume-main-name{
+    font-size: 72px;
+    text-align:center;
+}
+
+.resume-main-info{
+    bottom: 5px;
+    width: 100%;
+    position: absolute;
+}
+
+.resume-main-block{
+    height: 100%;
+}
+
+.resume-main-info i, .resume-main-info span{
+    padding: 5px;
+}
+
+.resume-main-info .fa-mobile{
+    font-size: 20px;
+}
+#resume-body{
+    height: 82%;
+    width: 98%;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 10px 5px;
+}
+
+#resume-body i{
+    padding: 5px;
+}
+
+#resume-education-block div .row, #resume-profession-block div .row, #resume-coursework-block div .row, #resume-technical-block div .row{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#resume-achievements-block .fa-star{
+    color: #FFFF00;
+}
+
+.experience-chart {
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+.experience-chart img {
+    height: 100%;
+    width: 100%;
+}
+
