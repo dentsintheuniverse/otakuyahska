@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Pill from "./home_components/pill-component.jsx"
+import Morpheus from "./morpheus-component.jsx"
+import Resume from "./resume-component.jsx"
+import {Router, Route, IndexRoute, hashHistory} from "react-router";
     
 
-class Home extends React.Component {
+export default class Home extends React.Component {
     render(){
-        return(
-            <div id="morpheus-space">
-                <Pill elementId="red_pill" elementClass="pill"/>
-                <Pill elementId="blue_pill" elementClass="pill"/>
+        return(  
+            <div>
+                {this.props.children}
             </div>
         );
     }
@@ -16,4 +17,11 @@ class Home extends React.Component {
 
 const app = document.getElementById('app');
 
-ReactDOM.render(<Home/>, app);
+ReactDOM.render(
+    <Router history={hashHistory}>
+        <Route path="/" component={Home}>
+            <IndexRoute component={Morpheus}></IndexRoute>
+            <Route path="profession" component={Resume}></Route>
+        </Route>
+    </Router>, 
+app);
